@@ -1,0 +1,29 @@
+﻿@{
+    ViewData["Title"] = "Главная";
+}
+
+<h1>Лабораторная работа 2.3</h1>
+<h3>Специальные вспомогательные методы</h3>
+
+<div style="margin-top: 30px;">
+    <a href="/Car/ViewAll" class="btn btn-primary btn-lg">Просмотр всех автомобилей</a>
+    <a href="/Car/Create" class="btn btn-success btn-lg">Добавить автомобиль</a>
+    <a href="/Car/Current" class="btn btn-info btn-lg">Текущий автомобиль</a>
+    <a href="/Car/ToggleMethod" class="btn btn-warning btn-lg">Переключить метод отображения</a>
+</div>
+
+<div style="margin-top: 20px; padding: 15px; background-color: #e8f4f8; border-radius: 5px;">
+    <h4>Информация о вспомогательных методах:</h4>
+    <p><strong>Внутренний метод:</strong> определен прямо в представлении с помощью functions</p>
+    <p><strong>Внешний метод:</strong> определен в классе CustomHtmlHelpers (Infrastructure/CustomHtmlHelpers.cs)</p>
+    <p>Выбор метода осуществляется через <strong>ViewData["UseExternalMethod"]</strong></p>
+    
+    @{
+        bool useExternal = ViewData["UseExternal"] as bool? ?? false;
+    }
+    <p>Текущий режим: <strong>@(useExternal ? "ВНЕШНИЙ метод" : "ВНУТРЕННИЙ метод")</strong></p>
+</div>
+
+<div style="margin-top: 20px;">
+    <p>Количество автомобилей в массиве: <strong>@CarStorage.GetCount()</strong></p>
+</div>

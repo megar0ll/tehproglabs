@@ -1,0 +1,51 @@
+﻿@model lab1._1.Models.CalculatorModel
+
+@{
+    ViewData["Title"] = "Калькулятор";
+}
+
+<h2>Простой калькулятор</h2>
+
+@using (Html.BeginForm("Calculate", "Calculator", FormMethod.Post))
+{
+    @Html.AntiForgeryToken()
+    
+    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.Operand1, htmlAttributes: new { @class = "control-label" })
+        @Html.TextBoxFor(model => model.Operand1, new { @class = "form-control", type = "number", step = "1" })
+        @Html.ValidationMessageFor(model => model.Operand1, "", new { @class = "text-danger" })
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.Operand2, htmlAttributes: new { @class = "control-label" })
+        @Html.TextBoxFor(model => model.Operand2, new { @class = "form-control", type = "number", step = "any" })
+        @Html.ValidationMessageFor(model => model.Operand2, "", new { @class = "text-danger" })
+    </div>
+
+    <div class="form-group">
+        <label>Выберите операцию:</label>
+        <div>
+            <label class="radio-inline">
+                @Html.RadioButtonFor(model => model.Operation, "+") Сложение (+)
+            </label>
+            <label class="radio-inline">
+                @Html.RadioButtonFor(model => model.Operation, "-") Вычитание (-)
+            </label>
+            <label class="radio-inline">
+                @Html.RadioButtonFor(model => model.Operation, "*") Умножение (*)
+            </label>
+            <label class="radio-inline">
+                @Html.RadioButtonFor(model => model.Operation, "/") Деление (/)
+            </label>
+        </div>
+        @Html.ValidationMessageFor(model => model.Operation, "", new { @class = "text-danger" })
+    </div>
+
+    <button type="submit" class="btn btn-primary">Вычислить</button>
+
+    <div class="form-group" style="margin-top: 20px;">
+        <h4>Результат: @Model.Result</h4>
+    </div>
+}

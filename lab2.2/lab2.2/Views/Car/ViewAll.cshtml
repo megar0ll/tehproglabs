@@ -1,0 +1,65 @@
+﻿@model lab2_2.Models.Car[]
+@{
+    ViewData["Title"] = "Все автомобили";
+}
+
+<h2>Просмотр всех автомобилей</h2>
+
+<p>
+    <a href="/Car/Create" class="btn btn-success">Добавить</a>
+    <a href="/Car/Index" class="btn btn-default">На главную</a>
+</p>
+
+<div class="alert alert-info">
+    <p>Всего в массиве: <strong>@ViewBag.Count</strong> из 100</p>
+    <p>Максимальный ID: <strong>@ViewBag.MaxId</strong></p>
+    <p>Следующий ID: <strong>@ViewBag.NextId</strong></p>
+</div>
+
+@if (Model.Length == 0)
+{
+    <p>Массив пуст</p>
+}
+else
+{
+    <table class="table table-striped table-bordered">
+        <thead>
+            <tr>
+                <th>№</th>
+                <th>ID</th>
+                <th>Марка</th>
+                <th>Модель</th>
+                <th>Год</th>
+                <th>Цена</th>
+                <th>Пробег</th>
+                <th>Топливо</th>
+                <th>Действия</th>
+            </tr>
+        </thead>
+        <tbody>
+            @{
+                int i = 0;
+                while (i < Model.Length)
+                {
+                    var car = Model[i];
+                    <tr>
+                        <td>@(i + 1)</td>
+                        <td>@car.Id</td>
+                        <td>@car.Brand</td>
+                        <td>@car.Model</td>
+                        <td>@car.Year</td>
+                        <td>@car.Price.ToString("C")</td>
+                        <td>@car.Mileage км</td>
+                        <td>@car.FuelType</td>
+                        <td>
+                            <a href="/Car/Details/@car.Id" class="btn btn-info btn-sm">Детали</a>
+                            <a href="/Car/Edit/@car.Id" class="btn btn-warning btn-sm">Ред.</a>
+                            <a href="/Car/Delete/@car.Id" class="btn btn-danger btn-sm">Уд.</a>
+                        </td>
+                    </tr>
+                    i++;
+                }
+            }
+        </tbody>
+    </table>
+}

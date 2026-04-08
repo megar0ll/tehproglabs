@@ -1,0 +1,26 @@
+﻿@model lab2_2.Models.Car
+@{
+    ViewData["Title"] = "Удаление";
+}
+
+<h2>Удаление автомобиля</h2>
+<h4>Вы уверены, что хотите удалить этот автомобиль?</h4>
+
+<dl class="dl-horizontal">
+    <dt>ID</dt>
+    <dd>@Model.Id</dd>
+    <dt>Марка</dt>
+    <dd>@Model.Brand</dd>
+    <dt>Модель</dt>
+    <dd>@Model.Model</dd>
+    <dt>Год</dt>
+    <dd>@Model.Year</dd>
+    <dt>Цена</dt>
+    <dd>@Model.Price.ToString("C")</dd>
+</dl>
+
+<form method="post">
+    <input type="hidden" asp-for="Id" />
+    <button type="submit" class="btn btn-danger">Удалить</button>
+    <a href="/Car/ViewAll" class="btn btn-default">Отмена</a>
+</form>

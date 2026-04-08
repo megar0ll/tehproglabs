@@ -1,0 +1,22 @@
+﻿@model lab2_1.Models.Car
+
+@{
+    ViewData["Title"] = "Добавление нового автомобиля";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<form asp-action="Create">
+    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+    
+    @* Использование LabelForModel *@
+    @Html.LabelForModel("Заполните данные об автомобиле:", new { @class = "control-label" })
+    
+    @* Использование EditorForModel *@
+    @Html.EditorForModel()
+    
+    <div class="form-group">
+        <input type="submit" value="Добавить" class="btn btn-success" />
+        <a asp-action="Index" class="btn btn-default">Отмена</a>
+    </div>
+</form>

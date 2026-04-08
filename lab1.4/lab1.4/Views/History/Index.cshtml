@@ -1,0 +1,129 @@
+﻿@{
+    ViewData["Title"] = "Operation History";
+    List<string> rawHistory = ViewBag.RawHistory as List<string> ?? new List<string>();
+    List<string> processedHistory = ViewBag.ProcessedHistory as List<string> ?? new List<string>();
+}
+
+<div class="calculator-container">
+    <div class="calculator-header">
+        <h2>OPERATION HISTORY</h2>
+        <p>last 10 calculations</p>
+    </div>
+    
+    <div class="calculator-body">
+        @* Ссылка обратно на калькулятор *@
+        <div class="history-link">
+            @Html.ActionLink("[ BACK TO CALCULATOR ]", "Index", "Calculator", null, new { @class = "history-link-btn" })
+        </div>
+        
+        @if (rawHistory.Count == 0)
+        {
+            <div class="comparison-area comparison-info">
+                No operations performed yet.<br />
+                Go back to calculator and perform some calculations.
+            </div>
+        }
+        else
+        {
+            <div class="history-table">
+                <div class="history-header">
+                    <div class="history-col raw">RAW FORMAT</div>
+                    <div class="history-col processed">PROCESSED FORMAT</div>
+                </div>
+                
+                @for (int i = 0; i < rawHistory.Count; i++)
+                {
+                    <div class="history-row">
+                        <div class="history-col raw">@rawHistory[i]</div>
+                        <div class="history-col processed">@processedHistory[i]</div>
+                    </div>
+                }
+            </div>
+            
+            <div class="info-note">
+                * Processed format: operators replaced with words (+, -, *, /)
+            </div>
+        }
+    </div>
+    
+    <div class="calculator-footer">
+        SESSION STORAGE | LAST 10 OPERATIONS
+    </div>
+</div>
+
+@section Styles {
+    <style>
+        .history-link {
+            text-align: right;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #bdc3c7;
+        }
+        
+        .history-link-btn {
+            color: #2c3e50;
+            text-decoration: none;
+            font-size: 11px;
+            font-family: monospace;
+            letter-spacing: 1px;
+        }
+        
+        .history-link-btn:hover {
+            text-decoration: underline;
+        }
+        
+        .history-table {
+            width: 100%;
+            border: 1px solid #bdc3c7;
+        }
+        
+        .history-header {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            background: #34495e;
+            color: white;
+            font-weight: bold;
+        }
+        
+        .history-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            border-bottom: 1px solid #ecf0f1;
+        }
+        
+        .history-row:last-child {
+            border-bottom: none;
+        }
+        
+        .history-col {
+            padding: 10px;
+            font-size: 12px;
+            font-family: monospace;
+        }
+        
+        .history-col.raw {
+            border-right: 1px solid #bdc3c7;
+            background: #f8f9fa;
+        }
+        
+        .history-col.processed {
+            background: white;
+        }
+        
+        .history-header .history-col {
+            font-family: monospace;
+            font-size: 11px;
+            letter-spacing: 1px;
+        }
+        
+        .info-note {
+            margin-top: 15px;
+            padding: 8px;
+            background: #eaf2f8;
+            font-size: 10px;
+            font-family: monospace;
+            color: #2c3e50;
+            text-align: center;
+        }
+    </style>
+}

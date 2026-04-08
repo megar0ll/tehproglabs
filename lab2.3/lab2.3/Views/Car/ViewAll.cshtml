@@ -1,0 +1,159 @@
+﻿@model lab2_3.Models.Car[]
+@{
+    ViewData["Title"] = "Все автомобили";
+    
+}
+
+@functions {
+    public Microsoft.AspNetCore.Html.IHtmlContent InternalCarCard(Car car, string borderColor = "#007bff")
+    {
+        var div = new Microsoft.AspNetCore.Mvc.Rendering.TagBuilder("div");
+        div.AddCssClass("car-card-internal");
+        div.Attributes["style"] = $"padding: 15px; margin: 10px 0; border-radius: 8px; border: 3px solid {borderColor}; background-color: #fff;";
+        
+        var title = new Microsoft.AspNetCore.Mvc.Rendering.TagBuilder("h4");
+        title.InnerHtml.Append($"{car.Brand} {car.Model}");
+        title.Attributes["style"] = $"color: {borderColor};";
+        
+        var info = new Microsoft.AspNetCore.Mvc.Rendering.TagBuilder("div");
+        info.InnerHtml.AppendHtml($"<p><strong>Год:</strong> {car.Year}</p>");
+        info.InnerHtml.AppendHtml($"<p><strong>Цена:</strong> {car.Price:C}</p>");
+        info.InnerHtml.AppendHtml($"<p><strong>Пробег:</strong> {car.Mileage} км</p>");
+        info.InnerHtml.AppendHtml($"<p><strong>Топливо:</strong> {car.FuelType}</p>");
+        
+        var availability = new Microsoft.AspNetCore.Mvc.Rendering.TagBuilder("span");
+        availability.AddCssClass("badge");
+        availability.AddCssClass(car.IsAvailable ? "badge-success" : "badge-danger");
+        availability.InnerHtml.Append(car.IsAvailable ? "В наличии" : "Нет в наличии");
+        info.InnerHtml.AppendHtml(availability);
+        
+        var badge = new Microsoft.AspNetCore.Mvc.Rendering.TagBuilder("div");
+        badge.AddCssClass("internal-badge");
+        badge.Attributes["style"] = "margin-top: 10px; font-style: italic; color: #666;";
+        badge.InnerHtml.Append("◆ Создано внутренним вспомогательным методом ◆");
+        
+        div.InnerHtml.AppendHtml(title);
+        div.InnerHtml.AppendHtml(info);
+        div.InnerHtml.AppendHtml(badge);
+        
+        return div;
+    }
+    
+    public Microsoft.AspNetCore.Html.IHtmlContent InternalCarRow(Car car, bool highlight = false)
+    {
+        var tr = new Microsoft.AspNetCore.Mvc.Rendering.TagBuilder("tr");
+        if (highlight)
+            tr.AddCssClass("table-warning");
+        
+        tr.InnerHtml.AppendHtml($"<td>{car.Id}</td>");
+        tr.InnerHtml.AppendHtml($"<td><strong>{car.Brand}</strong></td>");
+        tr.InnerHtml.AppendHtml($"<td><strong>{car.Model}</strong></td>");
+        tr.InnerHtml.AppendHtml($"<td>{car.Year}</td>");
+        tr.InnerHtml.AppendHtml($"<td>{car.Price:C}</td>");
+        tr.InnerHtml.AppendHtml($"<td>{car.Mileage} км</td>");
+        tr.InnerHtml.AppendHtml($"<td>{car.FuelType}</td>");
+        tr.InnerHtml.AppendHtml($"<td>{(car.IsAvailable ? "✅" : "❌")}</td>");
+        tr.InnerHtml.AppendHtml($"<td><span class='internal-marker'>внутренний</span></td>");
+        
+        return tr;
+    }
+}
+
+<h2>Просмотр всех автомобилей</h2>
+
+<p>
+    <a href="/Car/Create" class="btn btn-success">Добавить</a>
+    <a href="/Car/Index" class="btn btn-default">На главную</a>
+    <a href="/Car/ToggleMethod" class="btn btn-warning">Переключить метод</a>
+</p>
+
+<div class="alert alert-info">
+    <p>Всего в массиве: <strong>@ViewBag.Count</strong> из 100</p>
+    <p>Максимальный ID: <strong>@ViewBag.MaxId</strong></p>
+    <p>Следующий ID: <strong>@ViewBag.NextId</strong></p>
+    
+    @{
+        bool useExternal = ViewData["UseExternalMethod"] as bool? ?? false;
+        string methodType = ViewData["MethodType"] as string ?? "НЕ ОПРЕДЕЛЕН";
+    }
+    <p style="margin-top: 10px;">
+        <strong>Тип используемого вспомогательного метода:</strong>
+        <span class="badge @(useExternal ? "badge-primary" : "badge-success")" style="font-size: 14px;">
+            @methodType
+        </span>
+    </p>
+</div>
+
+@if (Model.Length == 0)
+{
+    <p>Массив пуст</p>
+}
+else
+{
+    <h3>Табличное представление</h3>
+    <table class="table table-striped table-bordered">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Марка</th>
+                <th>Модель</th>
+                <th>Год</th>
+                <th>Цена</th>
+                <th>Пробег</th>
+                <th>Топливо</th>
+                <th>Наличие</th>
+                <th>Метод</th>
+                <th>Действия</th>
+            </tr>
+        </thead>
+        <tbody>
+            @{
+                int i = 0;
+                while (i < Model.Length)
+                {
+                    var car = Model[i];
+                    
+                    if (useExternal)
+                    {
+                        @Html.ExternalCarRow(car, car.IsAvailable ? "table-success" : "table-danger")
+                    }
+                    else
+                    {
+                        @InternalCarRow(car, car.Price > 5000000)
+                    }
+                    
+                    <tr>
+                        <td colspan="9" style="padding: 5px;">
+                            <a href="/Car/Details/@car.Id" class="btn btn-info btn-sm">Детали</a>
+                            <a href="/Car/Edit/@car.Id" class="btn btn-warning btn-sm">Ред.</a>
+                            <a href="/Car/Delete/@car.Id" class="btn btn-danger btn-sm">Уд.</a>
+                        </td>
+                    </tr>
+                    i++;
+                }
+            }
+        </tbody>
+    </table>
+    
+    <h3 style="margin-top: 30px;">Карточное представление</h3>
+    <div class="row">
+        @{
+            int j = 0;
+            while (j < Model.Length)
+            {
+                var car = Model[j];
+                <div class="col-md-4">
+                    @if (useExternal)
+                    {
+                        @Html.ExternalCarCard(car, car.IsAvailable ? "#d4edda" : "#f8d7da")
+                    }
+                    else
+                    {
+                        @InternalCarCard(car, car.IsAvailable ? "#28a745" : "#dc3545")
+                    }
+                </div>
+                j++;
+            }
+        }
+    </div>
+}

@@ -1,0 +1,61 @@
+﻿@model lab2_3.Models.Car
+@{
+    ViewData["Title"] = "Детали";
+    bool useExternal = ViewData["UseExternalMethod"] as bool? ?? false;
+}
+
+<h2>Детали автомобиля</h2>
+
+<p>
+    <strong>Метод отображения:</strong>
+    <span class="badge @(useExternal ? "badge-primary" : "badge-success")">
+        @(useExternal ? "ВНЕШНИЙ" : "ВНУТРЕННИЙ")
+    </span>
+</p>
+
+@if (useExternal)
+{
+    @Html.ExternalCarCard(Model, Model.IsAvailable ? "#e8f5e9" : "#ffebee")
+}
+else
+{
+    @InternalCarCard(Model, Model.IsAvailable ? "#4caf50" : "#f44336")
+}
+
+<p style="margin-top: 20px;">
+    <a href="/Car/Edit/@Model.Id" class="btn btn-warning">Редактировать</a>
+    <a href="/Car/ViewAll" class="btn btn-default">К списку</a>
+</p>
+
+@functions {
+    public Microsoft.AspNetCore.Html.IHtmlContent InternalCarCard(lab2_3.Models.Car car, string borderColor = "#007bff")
+    {
+        var div = new Microsoft.AspNetCore.Mvc.Rendering.TagBuilder("div");
+        div.AddCssClass("car-card-internal");
+        div.Attributes["style"] = $"padding: 20px; margin: 20px 0; border-radius: 10px; border: 3px solid {borderColor}; background-color: #fff;";
+        
+        var title = new Microsoft.AspNetCore.Mvc.Rendering.TagBuilder("h3");
+        title.InnerHtml.Append($"{car.Brand} {car.Model}");
+        title.Attributes["style"] = $"color: {borderColor};";
+        
+        var info = new Microsoft.AspNetCore.Mvc.Rendering.TagBuilder("div");
+        info.InnerHtml.AppendHtml($"<p><strong>ID:</strong> {car.Id}</p>");
+        info.InnerHtml.AppendHtml($"<p><strong>Год выпуска:</strong> {car.Year}</p>");
+        info.InnerHtml.AppendHtml($"<p><strong>Цена:</strong> {car.Price:C}</p>");
+        info.InnerHtml.AppendHtml($"<p><strong>Пробег:</strong> {car.Mileage} км</p>");
+        info.InnerHtml.AppendHtml($"<p><strong>Тип топлива:</strong> {car.FuelType}</p>");
+        info.InnerHtml.AppendHtml($"<p><strong>Описание:</strong> {car.Description}</p>");
+        info.InnerHtml.AppendHtml($"<p><strong>Дата добавления:</strong> {car.CreatedDate:dd.MM.yyyy HH:mm}</p>");
+        
+        var availability = new Microsoft.AspNetCore.Mvc.Rendering.TagBuilder("div");
+        availability.AddCssClass("alert");
+        availability.AddCssClass(car.IsAvailable ? "alert-success" : "alert-danger");
+        availability.InnerHtml.Append(car.IsAvailable ? "✓ Автомобиль в наличии" : "✗ Автомобиль отсутствует");
+        
+        div.InnerHtml.AppendHtml(title);
+        div.InnerHtml.AppendHtml(info);
+        div.InnerHtml.AppendHtml(availability);
+        
+        return div;
+    }
+}

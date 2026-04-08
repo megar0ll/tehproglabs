@@ -1,0 +1,258 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\\u0420\u043E\u043C\u0430\u043D\\source\\repos\\tplabs\\lab2.3\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{31B43606-EBDF-4344-A6DC-F3E7B584EC6F}|lab2.3\\lab2.3.csproj|c:\\users\\\u0440\u043E\u043C\u0430\u043D\\source\\repos\\tplabs\\lab2.3\\lab2.3\\views\\car\\viewall.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{31B43606-EBDF-4344-A6DC-F3E7B584EC6F}|lab2.3\\lab2.3.csproj|solutionrelative:lab2.3\\views\\car\\viewall.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{31B43606-EBDF-4344-A6DC-F3E7B584EC6F}|lab2.3\\lab2.3.csproj|c:\\users\\\u0440\u043E\u043C\u0430\u043D\\source\\repos\\tplabs\\lab2.3\\lab2.3\\views\\car\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{31B43606-EBDF-4344-A6DC-F3E7B584EC6F}|lab2.3\\lab2.3.csproj|solutionrelative:lab2.3\\views\\car\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{31B43606-EBDF-4344-A6DC-F3E7B584EC6F}|lab2.3\\lab2.3.csproj|c:\\users\\\u0440\u043E\u043C\u0430\u043D\\source\\repos\\tplabs\\lab2.3\\lab2.3\\controllers\\carcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{31B43606-EBDF-4344-A6DC-F3E7B584EC6F}|lab2.3\\lab2.3.csproj|solutionrelative:lab2.3\\controllers\\carcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{31B43606-EBDF-4344-A6DC-F3E7B584EC6F}|lab2.3\\lab2.3.csproj|c:\\users\\\u0440\u043E\u043C\u0430\u043D\\source\\repos\\tplabs\\lab2.3\\lab2.3\\infrastructure\\customhtmlhelpers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{31B43606-EBDF-4344-A6DC-F3E7B584EC6F}|lab2.3\\lab2.3.csproj|solutionrelative:lab2.3\\infrastructure\\customhtmlhelpers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{31B43606-EBDF-4344-A6DC-F3E7B584EC6F}|lab2.3\\lab2.3.csproj|c:\\users\\\u0440\u043E\u043C\u0430\u043D\\source\\repos\\tplabs\\lab2.3\\lab2.3\\views\\car\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{31B43606-EBDF-4344-A6DC-F3E7B584EC6F}|lab2.3\\lab2.3.csproj|solutionrelative:lab2.3\\views\\car\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{31B43606-EBDF-4344-A6DC-F3E7B584EC6F}|lab2.3\\lab2.3.csproj|c:\\users\\\u0440\u043E\u043C\u0430\u043D\\source\\repos\\tplabs\\lab2.3\\lab2.3\\views\\car\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{31B43606-EBDF-4344-A6DC-F3E7B584EC6F}|lab2.3\\lab2.3.csproj|solutionrelative:lab2.3\\views\\car\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{31B43606-EBDF-4344-A6DC-F3E7B584EC6F}|lab2.3\\lab2.3.csproj|c:\\users\\\u0440\u043E\u043C\u0430\u043D\\source\\repos\\tplabs\\lab2.3\\lab2.3\\views\\shared\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{31B43606-EBDF-4344-A6DC-F3E7B584EC6F}|lab2.3\\lab2.3.csproj|solutionrelative:lab2.3\\views\\shared\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{31B43606-EBDF-4344-A6DC-F3E7B584EC6F}|lab2.3\\lab2.3.csproj|c:\\users\\\u0440\u043E\u043C\u0430\u043D\\source\\repos\\tplabs\\lab2.3\\lab2.3\\views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{31B43606-EBDF-4344-A6DC-F3E7B584EC6F}|lab2.3\\lab2.3.csproj|solutionrelative:lab2.3\\views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{31B43606-EBDF-4344-A6DC-F3E7B584EC6F}|lab2.3\\lab2.3.csproj|c:\\users\\\u0440\u043E\u043C\u0430\u043D\\source\\repos\\tplabs\\lab2.3\\lab2.3\\views\\car\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{31B43606-EBDF-4344-A6DC-F3E7B584EC6F}|lab2.3\\lab2.3.csproj|solutionrelative:lab2.3\\views\\car\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{31B43606-EBDF-4344-A6DC-F3E7B584EC6F}|lab2.3\\lab2.3.csproj|c:\\users\\\u0440\u043E\u043C\u0430\u043D\\source\\repos\\tplabs\\lab2.3\\lab2.3\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{31B43606-EBDF-4344-A6DC-F3E7B584EC6F}|lab2.3\\lab2.3.csproj|solutionrelative:lab2.3\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{31B43606-EBDF-4344-A6DC-F3E7B584EC6F}|lab2.3\\lab2.3.csproj|c:\\users\\\u0440\u043E\u043C\u0430\u043D\\source\\repos\\tplabs\\lab2.3\\lab2.3\\views\\car\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{31B43606-EBDF-4344-A6DC-F3E7B584EC6F}|lab2.3\\lab2.3.csproj|solutionrelative:lab2.3\\views\\car\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{31B43606-EBDF-4344-A6DC-F3E7B584EC6F}|lab2.3\\lab2.3.csproj|c:\\users\\\u0440\u043E\u043C\u0430\u043D\\source\\repos\\tplabs\\lab2.3\\lab2.3\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{31B43606-EBDF-4344-A6DC-F3E7B584EC6F}|lab2.3\\lab2.3.csproj|solutionrelative:lab2.3\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{31B43606-EBDF-4344-A6DC-F3E7B584EC6F}|lab2.3\\lab2.3.csproj|c:\\users\\\u0440\u043E\u043C\u0430\u043D\\source\\repos\\tplabs\\lab2.3\\lab2.3\\services\\carstorage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{31B43606-EBDF-4344-A6DC-F3E7B584EC6F}|lab2.3\\lab2.3.csproj|solutionrelative:lab2.3\\services\\carstorage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{31B43606-EBDF-4344-A6DC-F3E7B584EC6F}|lab2.3\\lab2.3.csproj|c:\\users\\\u0440\u043E\u043C\u0430\u043D\\source\\repos\\tplabs\\lab2.3\\lab2.3\\models\\car.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{31B43606-EBDF-4344-A6DC-F3E7B584EC6F}|lab2.3\\lab2.3.csproj|solutionrelative:lab2.3\\models\\car.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 7,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Error.cshtml",
+              "DocumentMoniker": "C:\\Users\\\u0420\u043E\u043C\u0430\u043D\\source\\repos\\tplabs\\lab2.3\\lab2.3\\Views\\Shared\\Error.cshtml",
+              "RelativeDocumentMoniker": "lab2.3\\Views\\Shared\\Error.cshtml",
+              "ToolTip": "C:\\Users\\\u0420\u043E\u043C\u0430\u043D\\source\\repos\\tplabs\\lab2.3\\lab2.3\\Views\\Shared\\Error.cshtml",
+              "RelativeToolTip": "lab2.3\\Views\\Shared\\Error.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-04-08T01:25:39.179Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "_ValidationScriptsPartial.cshtml",
+              "DocumentMoniker": "C:\\Users\\\u0420\u043E\u043C\u0430\u043D\\source\\repos\\tplabs\\lab2.3\\lab2.3\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "RelativeDocumentMoniker": "lab2.3\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "ToolTip": "C:\\Users\\\u0420\u043E\u043C\u0430\u043D\\source\\repos\\tplabs\\lab2.3\\lab2.3\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "RelativeToolTip": "lab2.3\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-04-08T01:24:34.282Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "C:\\Users\\\u0420\u043E\u043C\u0430\u043D\\source\\repos\\tplabs\\lab2.3\\lab2.3\\Views\\Car\\Delete.cshtml",
+              "RelativeDocumentMoniker": "lab2.3\\Views\\Car\\Delete.cshtml",
+              "ToolTip": "C:\\Users\\\u0420\u043E\u043C\u0430\u043D\\source\\repos\\tplabs\\lab2.3\\lab2.3\\Views\\Car\\Delete.cshtml",
+              "RelativeToolTip": "lab2.3\\Views\\Car\\Delete.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFQAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-04-08T01:24:00.001Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\\u0420\u043E\u043C\u0430\u043D\\source\\repos\\tplabs\\lab2.3\\lab2.3\\Views\\Car\\Edit.cshtml",
+              "RelativeDocumentMoniker": "lab2.3\\Views\\Car\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\\u0420\u043E\u043C\u0430\u043D\\source\\repos\\tplabs\\lab2.3\\lab2.3\\Views\\Car\\Edit.cshtml",
+              "RelativeToolTip": "lab2.3\\Views\\Car\\Edit.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-04-08T01:23:49.326Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\\u0420\u043E\u043C\u0430\u043D\\source\\repos\\tplabs\\lab2.3\\lab2.3\\Program.cs",
+              "RelativeDocumentMoniker": "lab2.3\\Program.cs",
+              "ToolTip": "C:\\Users\\\u0420\u043E\u043C\u0430\u043D\\source\\repos\\tplabs\\lab2.3\\lab2.3\\Program.cs",
+              "RelativeToolTip": "lab2.3\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-08T01:23:18.442Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\\u0420\u043E\u043C\u0430\u043D\\source\\repos\\tplabs\\lab2.3\\lab2.3\\Views\\Car\\Create.cshtml",
+              "RelativeDocumentMoniker": "lab2.3\\Views\\Car\\Create.cshtml",
+              "ToolTip": "C:\\Users\\\u0420\u043E\u043C\u0430\u043D\\source\\repos\\tplabs\\lab2.3\\lab2.3\\Views\\Car\\Create.cshtml",
+              "RelativeToolTip": "lab2.3\\Views\\Car\\Create.cshtml",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAAADgAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-04-08T01:22:58.472Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\\u0420\u043E\u043C\u0430\u043D\\source\\repos\\tplabs\\lab2.3\\lab2.3\\Views\\Car\\Details.cshtml",
+              "RelativeDocumentMoniker": "lab2.3\\Views\\Car\\Details.cshtml",
+              "ToolTip": "C:\\Users\\\u0420\u043E\u043C\u0430\u043D\\source\\repos\\tplabs\\lab2.3\\lab2.3\\Views\\Car\\Details.cshtml",
+              "RelativeToolTip": "lab2.3\\Views\\Car\\Details.cshtml",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAAABAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-04-08T01:21:54.853Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ViewAll.cshtml",
+              "DocumentMoniker": "C:\\Users\\\u0420\u043E\u043C\u0430\u043D\\source\\repos\\tplabs\\lab2.3\\lab2.3\\Views\\Car\\ViewAll.cshtml",
+              "RelativeDocumentMoniker": "lab2.3\\Views\\Car\\ViewAll.cshtml",
+              "ToolTip": "C:\\Users\\\u0420\u043E\u043C\u0430\u043D\\source\\repos\\tplabs\\lab2.3\\lab2.3\\Views\\Car\\ViewAll.cshtml",
+              "RelativeToolTip": "lab2.3\\Views\\Car\\ViewAll.cshtml",
+              "ViewState": "AgIAAFoAAAAAAAAAAAAAAIAAAABfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-04-08T01:20:28.575Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\\u0420\u043E\u043C\u0430\u043D\\source\\repos\\tplabs\\lab2.3\\lab2.3\\Views\\Car\\Index.cshtml",
+              "RelativeDocumentMoniker": "lab2.3\\Views\\Car\\Index.cshtml",
+              "ToolTip": "C:\\Users\\\u0420\u043E\u043C\u0430\u043D\\source\\repos\\tplabs\\lab2.3\\lab2.3\\Views\\Car\\Index.cshtml",
+              "RelativeToolTip": "lab2.3\\Views\\Car\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAABdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-04-08T01:20:01.293Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "_ViewImports.cshtml",
+              "DocumentMoniker": "C:\\Users\\\u0420\u043E\u043C\u0430\u043D\\source\\repos\\tplabs\\lab2.3\\lab2.3\\Views\\_ViewImports.cshtml",
+              "RelativeDocumentMoniker": "lab2.3\\Views\\_ViewImports.cshtml",
+              "ToolTip": "C:\\Users\\\u0420\u043E\u043C\u0430\u043D\\source\\repos\\tplabs\\lab2.3\\lab2.3\\Views\\_ViewImports.cshtml",
+              "RelativeToolTip": "lab2.3\\Views\\_ViewImports.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-04-08T01:19:41.554Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CarController.cs",
+              "DocumentMoniker": "C:\\Users\\\u0420\u043E\u043C\u0430\u043D\\source\\repos\\tplabs\\lab2.3\\lab2.3\\Controllers\\CarController.cs",
+              "RelativeDocumentMoniker": "lab2.3\\Controllers\\CarController.cs",
+              "ToolTip": "C:\\Users\\\u0420\u043E\u043C\u0430\u043D\\source\\repos\\tplabs\\lab2.3\\lab2.3\\Controllers\\CarController.cs",
+              "RelativeToolTip": "lab2.3\\Controllers\\CarController.cs",
+              "ViewState": "AgIAAEUAAAAAAAAAAAAmwCMAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-08T01:19:26.782Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CustomHtmlHelpers.cs",
+              "DocumentMoniker": "C:\\Users\\\u0420\u043E\u043C\u0430\u043D\\source\\repos\\tplabs\\lab2.3\\lab2.3\\Infrastructure\\CustomHtmlHelpers.cs",
+              "RelativeDocumentMoniker": "lab2.3\\Infrastructure\\CustomHtmlHelpers.cs",
+              "ToolTip": "C:\\Users\\\u0420\u043E\u043C\u0430\u043D\\source\\repos\\tplabs\\lab2.3\\lab2.3\\Infrastructure\\CustomHtmlHelpers.cs",
+              "RelativeToolTip": "lab2.3\\Infrastructure\\CustomHtmlHelpers.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-08T01:18:53.324Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "CarStorage.cs",
+              "DocumentMoniker": "C:\\Users\\\u0420\u043E\u043C\u0430\u043D\\source\\repos\\tplabs\\lab2.3\\lab2.3\\Services\\CarStorage.cs",
+              "RelativeDocumentMoniker": "lab2.3\\Services\\CarStorage.cs",
+              "ToolTip": "C:\\Users\\\u0420\u043E\u043C\u0430\u043D\\source\\repos\\tplabs\\lab2.3\\lab2.3\\Services\\CarStorage.cs",
+              "RelativeToolTip": "lab2.3\\Services\\CarStorage.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-08T01:17:54.076Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Car.cs",
+              "DocumentMoniker": "C:\\Users\\\u0420\u043E\u043C\u0430\u043D\\source\\repos\\tplabs\\lab2.3\\lab2.3\\Models\\Car.cs",
+              "RelativeDocumentMoniker": "lab2.3\\Models\\Car.cs",
+              "ToolTip": "C:\\Users\\\u0420\u043E\u043C\u0430\u043D\\source\\repos\\tplabs\\lab2.3\\lab2.3\\Models\\Car.cs",
+              "RelativeToolTip": "lab2.3\\Models\\Car.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-08T01:17:16.632Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+﻿@model lab2_2.Models.Car
+@{
+    ViewData["Title"] = "Детали";
+}
+
+<h2>Детали автомобиля</h2>
+
+<dl class="dl-horizontal">
+    <dt>ID</dt>
+    <dd>@Model.Id</dd>
+    <dt>Марка</dt>
+    <dd>@Model.Brand</dd>
+    <dt>Модель</dt>
+    <dd>@Model.Model</dd>
+    <dt>Год</dt>
+    <dd>@Model.Year</dd>
+    <dt>Цена</dt>
+    <dd>@Model.Price.ToString("C")</dd>
+    <dt>Пробег</dt>
+    <dd>@Model.Mileage км</dd>
+    <dt>Топливо</dt>
+    <dd>@Model.FuelType</dd>
+    <dt>Описание</dt>
+    <dd>@Model.Description</dd>
+    <dt>Дата добавления</dt>
+    <dd>@Model.CreatedDate</dd>
+</dl>
+
+<p>
+    <a href="/Car/Edit/@Model.Id" class="btn btn-warning">Редактировать</a>
+    <a href="/Car/ViewAll" class="btn btn-default">К списку</a>
+</p>

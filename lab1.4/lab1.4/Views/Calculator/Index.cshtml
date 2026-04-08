@@ -1,0 +1,185 @@
+﻿@model lab1._4.Models.CalculatorModel
+
+@{
+    ViewData["Title"] = "Calculator";
+}
+
+<div class="calculator-container">
+    <div class="calculator-header">
+        <h2>CALCULATOR v1.4</h2>
+        <p>target value: 42</p>
+    </div>
+    
+    <div class="calculator-body">
+        @* Пункт 1: Ссылка на второе представление через ActionLink *@
+        <div class="history-link">
+            @Html.ActionLink("[ VIEW HISTORY ]", "Index", "History", null, new { @class = "history-link-btn" })
+        </div>
+        
+        @Html.ValidationSummary(true, "", new { @class = "validation-summary-errors" })
+        
+        @using (Html.BeginForm("Index", "Calculator", FormMethod.Post))
+        {
+            <div class="input-group">
+                <label>OPERAND 1 (sbyte)</label>
+                @Html.TextBoxFor(model => model.Operand1, new
+                {
+                    @class = "textBoxStyle",
+                    type = "number",
+                    step = "1",
+                    placeholder = "-128 ... 127",
+                    autocomplete = "off"
+                })
+                @Html.ValidationMessageFor(model => model.Operand1, "", new { @class = "field-validation-error" })
+                <div class="small-hint">range: -128 to 127</div>
+            </div>
+            
+            <div class="input-group">
+                <label>OPERAND 2 (sbyte)</label>
+                @Html.TextBoxFor(model => model.Operand2, new
+                {
+                    @class = "textBoxStyle",
+                    type = "number",
+                    step = "1",
+                    placeholder = "-128 ... 127",
+                    autocomplete = "off"
+                })
+                @Html.ValidationMessageFor(model => model.Operand2, "", new { @class = "field-validation-error" })
+                <div class="small-hint">must match operand 1</div>
+            </div>
+            
+            <div class="operation-group">
+                <label>OPERATION</label>
+                <div class="operation-buttons">
+                    <div class="operation-btn @(Model.Operation == "+" ? "selected" : "")" data-op="+">+</div>
+                    <div class="operation-btn @(Model.Operation == "-" ? "selected" : "")" data-op="-">-</div>
+                    <div class="operation-btn @(Model.Operation == "*" ? "selected" : "")" data-op="*">*</div>
+                    <div class="operation-btn @(Model.Operation == "/" ? "selected" : "")" data-op="/">/</div>
+                </div>
+                @Html.HiddenFor(model => model.Operation)
+                @Html.ValidationMessageFor(model => model.Operation, "", new { @class = "field-validation-error" })
+            </div>
+            
+            <div class="action-buttons">
+                <button type="submit" name="action" value="calculate" class="action-btn btn-calculate">
+                    CALCULATE
+                </button>
+                <button type="submit" name="action" value="clear" class="action-btn btn-clear">
+                    CLEAR
+                </button>
+            </div>
+        }
+        
+        <div class="result-area">
+            <div class="result-label">RESULT</div>
+            <div class="result-value">@Model.Result</div>
+        </div>
+        
+        @{
+            double targetValue = ViewBag.TargetValue != null ? (double)ViewBag.TargetValue : 0;
+        }
+        
+        @if (Model.Result != 0)
+        {
+            if (Model.Result == targetValue)
+            {
+                <div class="comparison-area comparison-success">
+                    <strong>MATCH</strong><br />
+                    @Model.Result == @targetValue
+                </div>
+            }
+            else
+            {
+                <div class="comparison-area comparison-warning">
+                    <strong>COMPARISON</strong><br />
+                    @Model.Result != @targetValue<br />
+                    diff: @(Model.Result - targetValue)
+                </div>
+            }
+        }
+        else
+        {
+            <div class="comparison-area comparison-info">
+                enter values and select operation
+            </div>
+        }
+    </div>
+    
+    <div class="calculator-footer">
+        [REQUIRED] [RANGE] [COMPARE] | ASP.NET CORE MVC
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        const operationBtns = document.querySelectorAll('.operation-btn');
+        const operationInput = document.querySelector('#Operation');
+        
+        operationBtns.forEach(btn => {
+            btn.addEventListener('click', function(e) {
+                e.preventDefault();
+                const op = this.getAttribute('data-op');
+                
+                operationBtns.forEach(b => b.classList.remove('selected'));
+                this.classList.add('selected');
+                operationInput.value = op;
+            });
+        });
+        
+        const form = document.querySelector('form');
+        form.addEventListener('submit', function(e) {
+            const operand1 = parseFloat(document.querySelector('#Operand1').value);
+            const operand2 = parseFloat(document.querySelector('#Operand2').value);
+            const operation = operationInput.value;
+            
+            if (isNaN(operand1) || document.querySelector('#Operand1').value === '') {
+                alert('ERROR: Operand 1 required');
+                e.preventDefault();
+                return false;
+            }
+            
+            if (isNaN(operand2) || document.querySelector('#Operand2').value === '') {
+                alert('ERROR: Operand 2 required');
+                e.preventDefault();
+                return false;
+            }
+            
+            if (operand1 < -128 || operand1 > 127) {
+                alert('ERROR: Operand 1 must be in range -128..127');
+                e.preventDefault();
+                return false;
+            }
+            
+            if (operand2 < -128 || operand2 > 127) {
+                alert('ERROR: Operand 2 must be in range -128..127');
+                e.preventDefault();
+                return false;
+            }
+            
+            if (!operation) {
+                alert('ERROR: Select operation (+, -, *, /)');
+                e.preventDefault();
+                return false;
+            }
+            
+            if (operand1 !== operand2) {
+                alert('ERROR: Operand 2 must match Operand 1');
+                e.preventDefault();
+                return false;
+            }
+            
+            return true;
+        });
+        
+        const inputs = document.querySelectorAll('.textBoxStyle');
+        inputs.forEach(input => {
+            input.addEventListener('input', function() {
+                this.classList.remove('input-validation-error');
+                const errorSpan = this.nextElementSibling;
+                if (errorSpan && errorSpan.classList.contains('field-validation-error')) {
+                    errorSpan.textContent = '';
+                }
+            });
+        });
+    </script>
+}

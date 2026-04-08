@@ -1,0 +1,23 @@
+﻿@{
+    ViewData["Title"] = "Главная";
+}
+
+<h1>Лабораторная работа 2.2</h1>
+<h3>Работа с массивом автомобилей</h3>
+
+<div style="margin-top: 30px;">
+    <a href="/Car/ViewAll" class="btn btn-primary btn-lg">Просмотр всех автомобилей</a>
+    <a href="/Car/Create" class="btn btn-success btn-lg">Добавить автомобиль</a>
+    <a href="/Car/Current" class="btn btn-info btn-lg">Текущий автомобиль</a>
+</div>
+
+<div style="margin-top: 20px;">
+    <p>Количество автомобилей в массиве: <strong>@lab2_2.Services.CarStorage.GetCount()</strong></p>
+    @{
+        int? idx = Context.Session.GetInt32("CurrentIndex");
+        if (idx != null)
+        {
+            <p>Текущий индекс в массиве: <strong>@(idx + 1)</strong></p>
+        }
+    }
+</div>

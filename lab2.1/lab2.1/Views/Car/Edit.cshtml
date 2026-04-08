@@ -1,0 +1,21 @@
+﻿@model lab2_1.Models.Car
+
+@{
+    ViewData["Title"] = "Редактирование автомобиля";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<form asp-action="Edit">
+    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+    <input type="hidden" asp-for="Id" />
+    <input type="hidden" asp-for="CreatedDate" />
+    
+    @Html.LabelForModel("Редактирование данных:", new { @class = "control-label" })
+    @Html.EditorForModel()
+    
+    <div class="form-group">
+        <input type="submit" value="Сохранить" class="btn btn-primary" />
+        <a asp-action="Index" class="btn btn-default">Отмена</a>
+    </div>
+</form>
