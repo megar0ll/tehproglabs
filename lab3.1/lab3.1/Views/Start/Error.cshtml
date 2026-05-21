@@ -1,0 +1,9 @@
+﻿@{
+    ViewData["Title"] = "Ошибка";
+}
+
+<h2>@ViewBag.ErrorMessage</h2>
+<p>Полный URL: @ViewBag.FullUrl</p>
+<p>Ожидалось: id = 0</p>
+
+<a asp-controller="Home" asp-action="Index">Вернуться на главную</a>

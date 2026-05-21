@@ -1,0 +1,190 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\\u0420\u043E\u043C\u0430\u043D\\source\\repos\\tplabs\\lab3.1\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{DA6896CE-BD22-4B47-9D4A-B7745F4F52BD}|lab3.1\\lab3.1.csproj|c:\\users\\\u0440\u043E\u043C\u0430\u043D\\source\\repos\\tplabs\\lab3.1\\lab3.1\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DA6896CE-BD22-4B47-9D4A-B7745F4F52BD}|lab3.1\\lab3.1.csproj|solutionrelative:lab3.1\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA6896CE-BD22-4B47-9D4A-B7745F4F52BD}|lab3.1\\lab3.1.csproj|c:\\users\\\u0440\u043E\u043C\u0430\u043D\\source\\repos\\tplabs\\lab3.1\\lab3.1\\views\\start\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DA6896CE-BD22-4B47-9D4A-B7745F4F52BD}|lab3.1\\lab3.1.csproj|solutionrelative:lab3.1\\views\\start\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA6896CE-BD22-4B47-9D4A-B7745F4F52BD}|lab3.1\\lab3.1.csproj|c:\\users\\\u0440\u043E\u043C\u0430\u043D\\source\\repos\\tplabs\\lab3.1\\lab3.1\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DA6896CE-BD22-4B47-9D4A-B7745F4F52BD}|lab3.1\\lab3.1.csproj|solutionrelative:lab3.1\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA6896CE-BD22-4B47-9D4A-B7745F4F52BD}|lab3.1\\lab3.1.csproj|c:\\users\\\u0440\u043E\u043C\u0430\u043D\\source\\repos\\tplabs\\lab3.1\\lab3.1\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DA6896CE-BD22-4B47-9D4A-B7745F4F52BD}|lab3.1\\lab3.1.csproj|solutionrelative:lab3.1\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA6896CE-BD22-4B47-9D4A-B7745F4F52BD}|lab3.1\\lab3.1.csproj|c:\\users\\\u0440\u043E\u043C\u0430\u043D\\source\\repos\\tplabs\\lab3.1\\lab3.1\\controllers\\startcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA6896CE-BD22-4B47-9D4A-B7745F4F52BD}|lab3.1\\lab3.1.csproj|solutionrelative:lab3.1\\controllers\\startcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA6896CE-BD22-4B47-9D4A-B7745F4F52BD}|lab3.1\\lab3.1.csproj|c:\\users\\\u0440\u043E\u043C\u0430\u043D\\source\\repos\\tplabs\\lab3.1\\lab3.1\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA6896CE-BD22-4B47-9D4A-B7745F4F52BD}|lab3.1\\lab3.1.csproj|solutionrelative:lab3.1\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA6896CE-BD22-4B47-9D4A-B7745F4F52BD}|lab3.1\\lab3.1.csproj|c:\\users\\\u0440\u043E\u043C\u0430\u043D\\source\\repos\\tplabs\\lab3.1\\lab3.1\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA6896CE-BD22-4B47-9D4A-B7745F4F52BD}|lab3.1\\lab3.1.csproj|solutionrelative:lab3.1\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA6896CE-BD22-4B47-9D4A-B7745F4F52BD}|lab3.1\\lab3.1.csproj|c:\\users\\\u0440\u043E\u043C\u0430\u043D\\source\\repos\\tplabs\\lab3.1\\lab3.1\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DA6896CE-BD22-4B47-9D4A-B7745F4F52BD}|lab3.1\\lab3.1.csproj|solutionrelative:lab3.1\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA6896CE-BD22-4B47-9D4A-B7745F4F52BD}|lab3.1\\lab3.1.csproj|c:\\users\\\u0440\u043E\u043C\u0430\u043D\\source\\repos\\tplabs\\lab3.1\\lab3.1\\views\\home\\result.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DA6896CE-BD22-4B47-9D4A-B7745F4F52BD}|lab3.1\\lab3.1.csproj|solutionrelative:lab3.1\\views\\home\\result.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA6896CE-BD22-4B47-9D4A-B7745F4F52BD}|lab3.1\\lab3.1.csproj|c:\\users\\\u0440\u043E\u043C\u0430\u043D\\source\\repos\\tplabs\\lab3.1\\lab3.1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA6896CE-BD22-4B47-9D4A-B7745F4F52BD}|lab3.1\\lab3.1.csproj|solutionrelative:lab3.1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\\u0420\u043E\u043C\u0430\u043D\\source\\repos\\tplabs\\lab3.1\\lab3.1\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "lab3.1\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\\u0420\u043E\u043C\u0430\u043D\\source\\repos\\tplabs\\lab3.1\\lab3.1\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "lab3.1\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAACkAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-05-21T22:55:59.164Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "_ViewImports.cshtml",
+              "DocumentMoniker": "C:\\Users\\\u0420\u043E\u043C\u0430\u043D\\source\\repos\\tplabs\\lab3.1\\lab3.1\\Views\\_ViewImports.cshtml",
+              "RelativeDocumentMoniker": "lab3.1\\Views\\_ViewImports.cshtml",
+              "ToolTip": "C:\\Users\\\u0420\u043E\u043C\u0430\u043D\\source\\repos\\tplabs\\lab3.1\\lab3.1\\Views\\_ViewImports.cshtml",
+              "RelativeToolTip": "lab3.1\\Views\\_ViewImports.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-05-21T22:55:50.695Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "_ViewStart.cshtml",
+              "DocumentMoniker": "C:\\Users\\\u0420\u043E\u043C\u0430\u043D\\source\\repos\\tplabs\\lab3.1\\lab3.1\\Views\\_ViewStart.cshtml",
+              "RelativeDocumentMoniker": "lab3.1\\Views\\_ViewStart.cshtml",
+              "ToolTip": "C:\\Users\\\u0420\u043E\u043C\u0430\u043D\\source\\repos\\tplabs\\lab3.1\\lab3.1\\Views\\_ViewStart.cshtml",
+              "RelativeToolTip": "lab3.1\\Views\\_ViewStart.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-05-21T22:55:49.477Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Error.cshtml",
+              "DocumentMoniker": "C:\\Users\\\u0420\u043E\u043C\u0430\u043D\\source\\repos\\tplabs\\lab3.1\\lab3.1\\Views\\Start\\Error.cshtml",
+              "RelativeDocumentMoniker": "lab3.1\\Views\\Start\\Error.cshtml",
+              "ToolTip": "C:\\Users\\\u0420\u043E\u043C\u0430\u043D\\source\\repos\\tplabs\\lab3.1\\lab3.1\\Views\\Start\\Error.cshtml",
+              "RelativeToolTip": "lab3.1\\Views\\Start\\Error.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAABEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-05-21T22:50:46.149Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ErrorViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\\u0420\u043E\u043C\u0430\u043D\\source\\repos\\tplabs\\lab3.1\\lab3.1\\Models\\ErrorViewModel.cs",
+              "RelativeDocumentMoniker": "lab3.1\\Models\\ErrorViewModel.cs",
+              "ToolTip": "C:\\Users\\\u0420\u043E\u043C\u0430\u043D\\source\\repos\\tplabs\\lab3.1\\lab3.1\\Models\\ErrorViewModel.cs",
+              "RelativeToolTip": "lab3.1\\Models\\ErrorViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-21T22:47:24.514Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Result.cshtml",
+              "DocumentMoniker": "C:\\Users\\\u0420\u043E\u043C\u0430\u043D\\source\\repos\\tplabs\\lab3.1\\lab3.1\\Views\\Home\\Result.cshtml",
+              "RelativeDocumentMoniker": "lab3.1\\Views\\Home\\Result.cshtml",
+              "ToolTip": "C:\\Users\\\u0420\u043E\u043C\u0430\u043D\\source\\repos\\tplabs\\lab3.1\\lab3.1\\Views\\Home\\Result.cshtml",
+              "RelativeToolTip": "lab3.1\\Views\\Home\\Result.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-05-21T22:45:36.745Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\\u0420\u043E\u043C\u0430\u043D\\source\\repos\\tplabs\\lab3.1\\lab3.1\\Program.cs",
+              "RelativeDocumentMoniker": "lab3.1\\Program.cs",
+              "ToolTip": "C:\\Users\\\u0420\u043E\u043C\u0430\u043D\\source\\repos\\tplabs\\lab3.1\\lab3.1\\Program.cs",
+              "RelativeToolTip": "lab3.1\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-21T22:38:07.324Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\\u0420\u043E\u043C\u0430\u043D\\source\\repos\\tplabs\\lab3.1\\lab3.1\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "lab3.1\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\\u0420\u043E\u043C\u0430\u043D\\source\\repos\\tplabs\\lab3.1\\lab3.1\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "lab3.1\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC0AAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-05-21T22:37:25.541Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "StartController.cs",
+              "DocumentMoniker": "C:\\Users\\\u0420\u043E\u043C\u0430\u043D\\source\\repos\\tplabs\\lab3.1\\lab3.1\\Controllers\\StartController.cs",
+              "RelativeDocumentMoniker": "lab3.1\\Controllers\\StartController.cs",
+              "ToolTip": "C:\\Users\\\u0420\u043E\u043C\u0430\u043D\\source\\repos\\tplabs\\lab3.1\\lab3.1\\Controllers\\StartController.cs",
+              "RelativeToolTip": "lab3.1\\Controllers\\StartController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-21T22:34:56.648Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\\u0420\u043E\u043C\u0430\u043D\\source\\repos\\tplabs\\lab3.1\\lab3.1\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "lab3.1\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\\u0420\u043E\u043C\u0430\u043D\\source\\repos\\tplabs\\lab3.1\\lab3.1\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "lab3.1\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-21T22:34:45.386Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

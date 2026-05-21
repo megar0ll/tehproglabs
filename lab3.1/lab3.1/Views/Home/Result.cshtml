@@ -1,0 +1,30 @@
+﻿@{
+    ViewData["Title"] = "Результаты";
+}
+
+<h2>Данные успешно сохранены</h2>
+
+<div>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-3">ID автомобиля:</dt>
+        <dd class="col-sm-9">@ViewBag.CarId</dd>
+
+        <dt class="col-sm-3">Марка:</dt>
+        <dd class="col-sm-9">@ViewBag.Brand</dd>
+
+        <dt class="col-sm-3">Модель:</dt>
+        <dd class="col-sm-9">@ViewBag.Model</dd>
+
+        <dt class="col-sm-3">Год выпуска:</dt>
+        <dd class="col-sm-9">@ViewBag.Year</dd>
+
+        <dt class="col-sm-3">В наличии:</dt>
+        <dd class="col-sm-9">@(ViewBag.IsAvailable == true ? "Да" : "Нет")</dd>
+
+        <dt class="col-sm-3">Тип топлива:</dt>
+        <dd class="col-sm-9">@ViewBag.FuelType</dd>
+    </dl>
+</div>
+
+<a asp-action="Index">Добавить еще один автомобиль</a>
